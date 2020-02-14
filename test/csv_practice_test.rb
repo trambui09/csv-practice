@@ -66,7 +66,7 @@ describe "CSV and Enumerables Exercise" do
 
   describe 'total_medals_per_team' do
 
-    it 'should return an array of hashes of accurate team and count' do
+    it 'should return a hash of accurate team and count' do
       # Arrange
       expected_totals = {
         'Norway' => 133,
