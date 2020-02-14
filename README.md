@@ -52,7 +52,7 @@ This method's responsibility is to:
 The tests in `test/csv_practice_test.rb` describe a method named `total_medals_per_team(olympic_data)`.
 
 This method's responsibility is to:
-  - take in an array of data of olympic athletes. Each element in the array should be a hash representing an Olympic athlete.
+  - take in an array of data of olympic athletes. Each element in the array should be a hash representing an Olympic athlete. (In other words, the result of `get_all_olympic_athletes`)
   - return a hash with the details of how many medals every team has achieved.
     - This hash should have a key for every team that has won at least one medal (the key is a string)
     - The value for each key should be an integer
@@ -84,7 +84,7 @@ No need to actually do the refactor right now.
 The tests in `test/csv_practice_test.rb` describe a method named `get_all_gold_medalists(olympic_data)`.
 
 This method's responsibility is to:
-  - take in an array of data of olympic athletes. Each element in the array should be a hash representing an Olympic athletes.
+  - take in an array of data of olympic athletes. Each element in the array should be a hash representing an Olympic athletes. (In other words, the result of `get_all_olympic_athletes`)
   - return an array of hashes.
     - Each element in the array should be a hash that contains all of the Olympic medalist information (ID, Name, Team, etc.)
     - The array should only contain athletes who won a Gold medal, or when their `Medal` value is equal to `"Gold"`
