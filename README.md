@@ -8,13 +8,13 @@ The following files have been provided. Note their directory:
 - `test/csv_practice_test.rb`
 - `lib/csv_practice.rb`
 
-Part 1 focuses on reading tests, and creating methods that read from a CSV, and transform/calculate from it.
+Wave 1 focuses on reading tests, and creating methods that read from a CSV, and transform/calculate from it.
 
-The optional Part 2 focuses on reading tests, and implementing methods with Enumerable methods.
+The optional Wave 2 focuses on reading tests, and implementing methods with Enumerable methods.
 
 The optional wave focuses on writing tests, and implementing methods with Enumerable methods.
 
-## Part 1: Reading from a CSV and Transforming the Data
+## Wave 1: Reading from a CSV and Transforming the Data
 
 ### `get_all_olympic_athletes(filename)`
 
@@ -77,7 +77,7 @@ If your `total_medals_per_team` method implementation does not use any of these 
 
 No need to actually do the refactor right now.
 
-## Optional Part 2: Transforming, Filtering, or Mapping Data from a CSV
+## Optional Wave 2: Transforming, Filtering, or Mapping Data from a CSV
 
 ### `get_all_gold_medalists(olympic_data)`
 
