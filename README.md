@@ -70,7 +70,7 @@ This method's responsibility is to:
 
 ### Can `total_medals_per_team` Use Enumerable Methods?
 
-If your `total_medals_per_team` method implementation does not use any of these methods, consider how you could refactor your code to use one of them. Discuss your strategy with a neighbor:
+If your `total_medals_per_team` method implementation does not use any of these methods, consider how you could refactor your code to use one of them. You are encouraged to discuss this with a classmate
 
 - `filter`
 - `count`
