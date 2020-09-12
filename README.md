@@ -10,7 +10,7 @@ The following files have been provided. Note their directory:
 
 Part 1 focuses on reading tests, and creating methods that read from a CSV, and transform/calculate from it.
 
-Part 2 focuses on reading tests, and implementing methods with Enumerable methods.
+The optional Part 2 focuses on reading tests, and implementing methods with Enumerable methods.
 
 The optional wave focuses on writing tests, and implementing methods with Enumerable methods.
 
@@ -77,7 +77,7 @@ If your `total_medals_per_team` method implementation does not use any of these 
 
 No need to actually do the refactor right now.
 
-## Part 2: Transforming, Filtering, or Mapping Data from a CSV
+## Optional Part 2: Transforming, Filtering, or Mapping Data from a CSV
 
 ### `get_all_gold_medalists(olympic_data)`
 
@@ -100,7 +100,7 @@ This method's responsibility is to:
 1. TDD the implementation of `get_all_gold_medalists(olympic_data)` with the provided tests.
 1. If your working implementation did not use the method `filter`, refactor to use `filter` now.
 
-## Optionals
+## More Optionals
 
 Pick one of these methods:
 
