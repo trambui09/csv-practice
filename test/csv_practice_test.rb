@@ -65,7 +65,7 @@ describe "CSV and Enumerables Exercise" do
     end
   end
 
-  xdescribe 'total_medals_per_team' do
+  describe 'total_medals_per_team' do
 
     it 'should return a hash of accurate team and count' do
       # Arrange
