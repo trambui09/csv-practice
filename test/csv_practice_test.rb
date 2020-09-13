@@ -5,6 +5,7 @@ require 'minitest/spec'
 require 'minitest/autorun'
 require 'minitest/reporters'
 require 'minitest/pride'
+require "minitest/skip_dsl"
 require 'pry'
 
 require_relative '../lib/csv_practice'
@@ -64,7 +65,7 @@ describe "CSV and Enumerables Exercise" do
     end
   end
 
-  describe 'total_medals_per_team' do
+  xdescribe 'total_medals_per_team' do
 
     it 'should return a hash of accurate team and count' do
       # Arrange
@@ -91,7 +92,7 @@ describe "CSV and Enumerables Exercise" do
     end
   end
 
-  describe 'get_all_gold_medalists' do
+  xdescribe 'get_all_gold_medalists' do
     
     it 'returns an array of gold medalists' do
       # Arrange
