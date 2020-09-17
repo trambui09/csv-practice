@@ -27,6 +27,19 @@ def total_medals_per_team(olympic_data)
   end
   return country_and_medals_hash
 end
+# how can I refactor using filter or count?
 
 def get_all_gold_medalists(olympic_data)
+  return olympic_data.select {|row| row["Medal"] == "Gold"}
+end
+
+def team_with_most_medals(medal_totals)
+  most_medals_team_hash = {}
+  # I can refactor this, but how?
+  most_medals_team_arr = medal_totals.max_by {|country_name, medal_count| medal_count}
+  most_medals_team_hash["Team"] = most_medals_team_arr[0]
+  most_medals_team_hash["Count"] = most_medals_team_arr[1]
+
+  return most_medals_team_hash
+
 end
