@@ -34,12 +34,8 @@ def get_all_gold_medalists(olympic_data)
 end
 
 def team_with_most_medals(medal_totals)
-  most_medals_team_hash = {}
-  # I can refactor this, but how?
+  # I can refactor this, but how? => by returning the intialized hash right there and then
   most_medals_team_arr = medal_totals.max_by {|country_name, medal_count| medal_count}
-  most_medals_team_hash["Team"] = most_medals_team_arr[0]
-  most_medals_team_hash["Count"] = most_medals_team_arr[1]
 
-  return most_medals_team_hash
-
+  return {"Team" => most_medals_team_arr[0], "Count" => most_medals_team_arr[1]}
 end
