@@ -82,7 +82,8 @@ describe "CSV and Enumerables Exercise" do
       data = get_all_olympic_athletes(OLYMPIC_DATA_FILENAME)
 
       # Act
-      total_medals = total_medals_per_team(data)
+      #total_medals = total_medals_per_team(data)
+      total_medals = total_medals_per_team(get_all_olympic_athletes(OLYMPIC_DATA_FILENAME))
 
       # Assert
       expect(total_medals).must_be_instance_of Hash
@@ -92,7 +93,7 @@ describe "CSV and Enumerables Exercise" do
     end
   end
 
-  xdescribe 'get_all_gold_medalists' do
+  describe 'get_all_gold_medalists' do
     
     it 'returns an array of gold medalists' do
       # Arrange
@@ -121,4 +122,25 @@ describe "CSV and Enumerables Exercise" do
     end
   end
 
+
+  describe "team_with_most_medals" do
+    it "should return a hash with highest medals count team and number of medals " do
+      # nominal postive case test
+      expected_hash = {
+          "Team" => "United States",
+          "Count" => 944,
+      }
+
+      total_medals = total_medals_per_team(get_all_olympic_athletes(OLYMPIC_DATA_FILENAME))
+      #Act
+      highest_medals = team_with_most_medals(total_medals)
+      #Assert
+      expect(highest_medals).must_be_instance_of Hash
+      expected_hash.each do |expected_team, expected_count|
+        expect(highest_medals[expected_team]).must_equal expected_count
+      end
+      # expect(highest_medals["Team"]).must_equal "United States"
+      # expect(highest_medals["Count"]).must_equal 944
+    end
+  end
 end
