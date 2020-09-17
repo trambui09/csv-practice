@@ -25,9 +25,7 @@ def total_medals_per_team(olympic_data)
       country_and_medals_hash.has_key?(country_name) ? country_and_medals_hash[country_name] += 1 : country_and_medals_hash[country_name] = 1
     end
   end
-
   return country_and_medals_hash
-
 end
 
 def get_all_gold_medalists(olympic_data)
